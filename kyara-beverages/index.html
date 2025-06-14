@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyara Beverages</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(4px);
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+   
+    
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+    .scroll-bounce {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body class="bg-[#FFF9F0] text-gray-800 relative overflow-x-hidden">
+
+  
+  <nav class="sticky top-0 z-50 bg-white shadow-md relative px-6 py-4 flex items-center justify-between">
+  <img src="assets/logo 2.png" class="h-14" alt="Kyara Logo" />
+  <ul class="absolute left-1/2 transform -translate-x-1/2 flex space-x-6 text-gray-700 font-semibold">
+    <li><a href="#about" class="hover:text-orange-500 transition">About</a></li>
+    <li><a href="#products" class="hover:text-orange-500 transition">Products</a></li>
+    <li><a href="#sustainability" class="hover:text-orange-500 transition">Sustainability</a></li>
+    <li><a href="#contact" class="hover:text-orange-500 transition">Contact</a></li>
+  </ul>
+  <label class="flex items-center ml-4 cursor-pointer">
+    <input id="darkToggle" type="checkbox" class="hidden">
+    <div class="w-10 h-5 bg-gray-300 rounded-full shadow-inner toggle-bg"></div>
+    <div class="dot absolute w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-300 translate-x-0 dark:translate-x-5"></div>
+  </label>
+</nav>
+
+
+  <!-- Hero Section with Background Behind Glass -->
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center overflow-hidden"
+           style="background-image: url('assets/bar-4656332.jpg'); background-size: cover; background-position: center;">
+    
+    <!-- Optional semi-transparent overlay -->
+    <div class="absolute inset-0 bg-orange-00 bg-opacity-0 z-0"></div>
+
+    <!-- Glassmorphism Content -->
+    <div class="glass relative z-10 text-center">
+      <img src="assets/logo 2.png" alt="Kyara Logo" class="mx-auto mb-6 w-20 h-20">
+      <h1 class="text-4xl md:text-5xl font-bold text-orange-60 drop-shadow">Refreshment, Reimagined</h1>
+      <p class="mt-2 font-bold text-lg text-orange-60">Feel the zest, sip the nature.</p>
+      <a href="#products" class="mt-6 inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 text-lg font-semibold transition-all shadow-lg">Explore Our Beverages</a>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-4 w-full text-center z-30">
+      <div class="scroll-bounce text-orange-500 text-2xl">&#8595;</div>
+    </div>
+  </section>
+
+  <!-- Lottie Drinks Pouring Animation -->
+<div class="flex justify-center mb-2">
+    <lottie-player src="https://lottie.host/6cbdfe8f-50a3-4a02-855f-845b2b846e4a/ToA8mR3U8W.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 md:px-20 text-center">
+    <h2 class="text-4xl font-semibold mb-6 text-orange-600">About Kyara</h2>
+    <p class="text-xl max-w-2xl mx-auto text-gray-600">Kyara Beverages brings nature's best into your hands. Our drinks blend tradition, innovation, and sustainability to deliver a refreshing experience like no other.</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-16 bg-orange-50 px-6 md:px-20">
+    <h2 class="text-4xl font-semibold text-center mb-10 text-orange-700">Our Signature Drinks</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="assets/alcohol-1850038.jpg" alt="Citrus Zest" class="rounded-lg w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-bold">Citrus Zest</h3>
+        <p class="text-gray-500">Tangy citrus with a hint of sunshine.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="assets/cocktail-7268068.jpg" alt="Berry Bliss" class="rounded-lg w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-bold">Berry Bliss</h3>
+        <p class="text-gray-500">A juicy burst of antioxidant-rich berries.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="assets/juice-6950672.jpg" alt="Minty Fresh" class="rounded-lg w-full h-48 object-cover mb-4">
+        <h3 class="text-xl font-bold">Minty Fresh</h3>
+        <p class="text-gray-500">Cool mint with a soothing touch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability -->
+  <section id="sustainability" class="py-16 px-6 md:px-20 bg-[#FFF9F0] text-center">
+    <h2 class="text-4xl text-green-700 font-semibold mb-6">Sustainability Matters</h2>
+    <p class="text-lg max-w-xl mx-auto text-gray-600 mb-8">From recyclable packaging to local sourcing, Kyara is committed to making refreshment guilt-free and green.</p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
+        <svg class="w-12 h-12 mx-auto text-green-500 mb-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          <path d="M8 11h4v4m0 0l-3.5-3.5M12 15l3.5-3.5" stroke="currentColor"/>
+        </svg>
+        <h3 class="font-bold text-lg">100% Recyclable</h3>
+        <p>All our bottles are recyclable and biodegradable.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
+        <svg class="w-12 h-12 mx-auto text-green-600 mb-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.13 2 5 8 5 13c0 3.87 3.13 7 7 7s7-3.13 7-7c0-5-3.13-11-7-11z"/>
+        </svg>
+        <h3 class="font-bold text-lg">Pure & Natural</h3>
+        <p>Only real fruits and herbs, no preservatives.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
+        <svg class="w-12 h-12 mx-auto text-blue-500 mb-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22c4.418 0 8-3.582 8-8 0-4.418-5-10-8-14-3 4-8 9.582-8 14 0 4.418 3.582 8 8 8z"/>
+        </svg>
+        <h3 class="font-bold text-lg">Eco-Conscious</h3>
+        <p>Minimal water usage in all production stages.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<section id="contact" class="py-20 px-6 md:px-20 bg-white relative">
+  <h2 class="text-4xl font-semibold text-center text-orange-700 mb-12">Get In Touch</h2>
+  <div class="max-w-3xl mx-auto bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-10 border border-orange-100 relative overflow-hidden transition-all duration-500 hover:shadow-2xl">
+    
+    <!-- Decorative Icon -->
+    <div class="absolute -top-10 -right-10 opacity-10">
+      <img src="assets/logo 2.png" class="w-48 rotate-12" alt="Logo">
+    </div>
+
+    <form class="space-y-8 z-10 relative">
+      <!-- Name -->
+      <div class="relative">
+        <input type="text" id="name" placeholder=" " required
+          class="peer w-full bg-transparent border-b-2 border-orange-400 outline-none p-3 text-gray-800 placeholder-transparent focus:border-orange-600 transition-all" />
+        <label for="name"
+          class="absolute left-3 top-3 text-gray-500 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-orange-600 transition-all">Full Name</label>
+      </div>
+
+      <!-- Email -->
+      <div class="relative">
+        <input type="email" id="email" placeholder=" " required
+          class="peer w-full bg-transparent border-b-2 border-orange-400 outline-none p-3 text-gray-800 placeholder-transparent focus:border-orange-600 transition-all" />
+        <label for="email"
+          class="absolute left-3 top-3 text-gray-500 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-orange-600 transition-all">Email Address</label>
+      </div>
+
+      <!-- Message -->
+      <div class="relative">
+        <textarea id="message" placeholder=" " rows="5" required
+          class="peer w-full bg-transparent border-b-2 border-orange-400 outline-none p-3 text-gray-800 placeholder-transparent focus:border-orange-600 transition-all"></textarea>
+        <label for="message"
+          class="absolute left-3 top-3 text-gray-500 peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-5 peer-focus:text-sm peer-focus:text-orange-600 transition-all">Your Message</label>
+      </div>
+
+      <!-- Button -->
+      <button type="submit"
+        class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 active:scale-95">
+        ✉️ Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-[#333] text-white py-8 text-center">
+    <img src="images/logo.png" alt="Kyara Logo" class="h-10 mx-auto mb-4">
+    <p>&copy; 2025 Kyara Beverages · Refreshment, Reimagined</p>
+    <div class="flex justify-center gap-6 mt-4">
+      <a href="#" aria-label="Instagram" class="hover:text-orange-400 transition">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 3.25a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5-1.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Facebook" class="hover:text-orange-400 transition">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M13.5 10.75H16V8h-2.5V6.75a.75.75 0 0 1 .75-.75h1.75V3h-2.5A3.25 3.25 0 0 0 10.75 6.25V8H9v2.75h1.75V21h2.75V10.75Z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="hover:text-orange-400 transition">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M4.98 3.5C3.87 3.5 3 4.37 3 5.48s.87 1.98 1.98 1.98A1.98 1.98 0 0 0 7.96 5.48c0-1.1-.88-1.98-1.98-1.98Zm.02 4H3v12h2v-12Zm4 0h-2v12h2v-6.2c0-1.1.9-2 2-2s2 .9 2 2V19h2v-6.5c0-2.48-2.02-4.5-4.5-4.5s-4.5 2.02-4.5 4.5V19h2v-6.5Z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+<!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
