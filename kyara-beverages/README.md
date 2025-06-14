@@ -20,10 +20,4 @@ assets/
 - **LottieFiles**: Used for interactive drink pouring animation.
 - **Plain JavaScript**: For dark mode toggle.
 
-## 🌐 Live Preview
 
-(Upload to GitHub Pages or attach a screenshot)
-
----
-
-© 2025 Kyara Beverages — Refreshment, Reimagined
