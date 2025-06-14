@@ -6,35 +6,9 @@
   <title>Kyara Beverages</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      overflow-x: hidden;
-    }
-    .glass {
-      background: rgba(255, 255, 255, 0.25);
-      backdrop-filter: blur(4px);
-      border-radius: 1rem;
-      padding: 2rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-   
-    
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-      100% { transform: translateY(0px); }
-    }
-    .scroll-bounce {
-      animation: bounce 2s infinite;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+ 
 </head>
 <body class="bg-[#FFF9F0] text-gray-800 relative overflow-x-hidden">
 
@@ -209,12 +183,7 @@
     </div>
   </footer>
 <!-- Dark Mode Script -->
-  <script>
-    const toggle = document.getElementById('darkToggle');
-    toggle.addEventListener('change', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
+   <script src="script.js"></script>
 
 </body>
 </html>
